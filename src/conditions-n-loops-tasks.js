@@ -43,7 +43,15 @@ function isPositive(number) {
  *  -0.1, 0, 0.2  => 0.2
  */
 function getMaxNumber(a, b, c) {
-  return getMaxNumber(a, b, c);
+  let res;
+  if (a >= b && a >= c) {
+    res = a;
+  } else if (b >= a && b >= c) {
+    res = b;
+  } else {
+    res = c;
+  }
+  return res;
 }
 
 /**
